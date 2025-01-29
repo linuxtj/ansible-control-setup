@@ -53,25 +53,26 @@ This project automates the deployment of an Ansible control node within a Proxmo
 
 ## Installation
 
-1. Create the scripts directory:
+1. Clone the repository to your Proxmox host:
 ```bash
-mkdir -p /root/infrastructure-as-code/
+mkdir -p /root/infrastructure-as-code
+cd /root/infrastructure-as-code
+git clone https://github.com/linuxtj/ansible-control-setup.git
 ```
 
-2. Save the script:
+2. Make it executable:
 ```bash
-nano /root/infrastructure-as-code/setup-ansible-control.sh
-# Copy and paste the script content
+chmod +x setup-ansible-control.sh
 ```
 
-3. Make it executable:
+3. Review and adjust variables in the script:
 ```bash
-chmod +x /root/infrastructure-as-code/setup-ansible-control.sh
+nano setup-ansible-control.sh
 ```
 
 4. Run the script:
 ```bash
-/root/infrastructure-as-code/setup-ansible-control.sh
+./setup-ansible-control.sh
 ```
 
 ## Directory Structure
